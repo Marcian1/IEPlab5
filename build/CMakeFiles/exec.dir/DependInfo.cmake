@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/marcian/Desktop/IEP5/src/Hello.cpp" "/home/marcian/Desktop/IEP5/build/CMakeFiles/hello_headers.dir/src/Hello.cpp.o"
-  "/home/marcian/Desktop/IEP5/src/main.cpp" "/home/marcian/Desktop/IEP5/build/CMakeFiles/hello_headers.dir/src/main.cpp.o"
+  "/home/marcian/Desktop/IEP5/Animal.cpp" "/home/marcian/Desktop/IEP5/build/CMakeFiles/exec.dir/Animal.cpp.o"
+  "/home/marcian/Desktop/IEP5/Dog.cpp" "/home/marcian/Desktop/IEP5/build/CMakeFiles/exec.dir/Dog.cpp.o"
+  "/home/marcian/Desktop/IEP5/main.cpp" "/home/marcian/Desktop/IEP5/build/CMakeFiles/exec.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../include"
   )
 
 # Targets to which this target links.

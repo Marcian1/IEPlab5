@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/marcian/Desktop/IEP5/include 
+CXX_INCLUDES = 
 

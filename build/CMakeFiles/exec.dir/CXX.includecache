@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/marcian/Desktop/IEP5/Animal.cpp
+iostream
+-
+string
+-
+
+/home/marcian/Desktop/IEP5/Dog.cpp
+iostream
+-
+string
+-
+Animal.cpp
+/home/marcian/Desktop/IEP5/Animal.cpp
+
+/home/marcian/Desktop/IEP5/RealSafe.cpp
+
+/home/marcian/Desktop/IEP5/main.cpp
+./Dog.cpp
+/home/marcian/Desktop/IEP5/Dog.cpp
+./RealSafe.cpp
+/home/marcian/Desktop/IEP5/RealSafe.cpp
+iostream
+-
+

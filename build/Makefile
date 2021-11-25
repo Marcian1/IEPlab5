@@ -111,71 +111,98 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hello_headers
+# Target rules for targets named exec
 
 # Build rule for target.
-hello_headers: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hello_headers
-.PHONY : hello_headers
+exec: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exec
+.PHONY : exec
 
 # fast build rule for target.
-hello_headers/fast:
-	$(MAKE) -f CMakeFiles/hello_headers.dir/build.make CMakeFiles/hello_headers.dir/build
-.PHONY : hello_headers/fast
+exec/fast:
+	$(MAKE) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/build
+.PHONY : exec/fast
 
-src/Hello.o: src/Hello.cpp.o
+Animal.o: Animal.cpp.o
 
-.PHONY : src/Hello.o
-
-# target to build an object file
-src/Hello.cpp.o:
-	$(MAKE) -f CMakeFiles/hello_headers.dir/build.make CMakeFiles/hello_headers.dir/src/Hello.cpp.o
-.PHONY : src/Hello.cpp.o
-
-src/Hello.i: src/Hello.cpp.i
-
-.PHONY : src/Hello.i
-
-# target to preprocess a source file
-src/Hello.cpp.i:
-	$(MAKE) -f CMakeFiles/hello_headers.dir/build.make CMakeFiles/hello_headers.dir/src/Hello.cpp.i
-.PHONY : src/Hello.cpp.i
-
-src/Hello.s: src/Hello.cpp.s
-
-.PHONY : src/Hello.s
-
-# target to generate assembly for a file
-src/Hello.cpp.s:
-	$(MAKE) -f CMakeFiles/hello_headers.dir/build.make CMakeFiles/hello_headers.dir/src/Hello.cpp.s
-.PHONY : src/Hello.cpp.s
-
-src/main.o: src/main.cpp.o
-
-.PHONY : src/main.o
+.PHONY : Animal.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/hello_headers.dir/build.make CMakeFiles/hello_headers.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+Animal.cpp.o:
+	$(MAKE) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/Animal.cpp.o
+.PHONY : Animal.cpp.o
 
-src/main.i: src/main.cpp.i
+Animal.i: Animal.cpp.i
 
-.PHONY : src/main.i
+.PHONY : Animal.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/hello_headers.dir/build.make CMakeFiles/hello_headers.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+Animal.cpp.i:
+	$(MAKE) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/Animal.cpp.i
+.PHONY : Animal.cpp.i
 
-src/main.s: src/main.cpp.s
+Animal.s: Animal.cpp.s
 
-.PHONY : src/main.s
+.PHONY : Animal.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/hello_headers.dir/build.make CMakeFiles/hello_headers.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+Animal.cpp.s:
+	$(MAKE) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/Animal.cpp.s
+.PHONY : Animal.cpp.s
+
+Dog.o: Dog.cpp.o
+
+.PHONY : Dog.o
+
+# target to build an object file
+Dog.cpp.o:
+	$(MAKE) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/Dog.cpp.o
+.PHONY : Dog.cpp.o
+
+Dog.i: Dog.cpp.i
+
+.PHONY : Dog.i
+
+# target to preprocess a source file
+Dog.cpp.i:
+	$(MAKE) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/Dog.cpp.i
+.PHONY : Dog.cpp.i
+
+Dog.s: Dog.cpp.s
+
+.PHONY : Dog.s
+
+# target to generate assembly for a file
+Dog.cpp.s:
+	$(MAKE) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/Dog.cpp.s
+.PHONY : Dog.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -185,13 +212,16 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... hello_headers"
-	@echo "... src/Hello.o"
-	@echo "... src/Hello.i"
-	@echo "... src/Hello.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... exec"
+	@echo "... Animal.o"
+	@echo "... Animal.i"
+	@echo "... Animal.s"
+	@echo "... Dog.o"
+	@echo "... Dog.i"
+	@echo "... Dog.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
