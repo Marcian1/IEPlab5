@@ -177,6 +177,33 @@ Dog.cpp.s:
 	$(MAKE) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/Dog.cpp.s
 .PHONY : Dog.cpp.s
 
+RealSafe.o: RealSafe.cpp.o
+
+.PHONY : RealSafe.o
+
+# target to build an object file
+RealSafe.cpp.o:
+	$(MAKE) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/RealSafe.cpp.o
+.PHONY : RealSafe.cpp.o
+
+RealSafe.i: RealSafe.cpp.i
+
+.PHONY : RealSafe.i
+
+# target to preprocess a source file
+RealSafe.cpp.i:
+	$(MAKE) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/RealSafe.cpp.i
+.PHONY : RealSafe.cpp.i
+
+RealSafe.s: RealSafe.cpp.s
+
+.PHONY : RealSafe.s
+
+# target to generate assembly for a file
+RealSafe.cpp.s:
+	$(MAKE) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/RealSafe.cpp.s
+.PHONY : RealSafe.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -219,6 +246,9 @@ help:
 	@echo "... Dog.o"
 	@echo "... Dog.i"
 	@echo "... Dog.s"
+	@echo "... RealSafe.o"
+	@echo "... RealSafe.i"
+	@echo "... RealSafe.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
