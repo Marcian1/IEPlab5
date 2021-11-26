@@ -26,10 +26,13 @@ int main(int argc, char *argv[])
 
 
  RealSafe a, b, c;
- c.pData = new Data();
- c.pData2 = new Data();
+ c.pData = new Data(3);
+ c.pData2 = new Data(4);
  a = c = b = a = b = b = c = c = a = a = b = a = c;
  
+
+ printf("%d\n", *a.pData);
+ printf("%d\n", *a.pData2);
     
     
 }
